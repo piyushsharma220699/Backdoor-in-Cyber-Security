@@ -19,5 +19,15 @@ while 1:
         files = str(files)
         client_socket.send(files.encode())
         print("Command view_cwd sent correctly!")
+    
+    elif command == "custom_dir":
+        user_input = client_socket.recv(5000)
+        user_input = user_input.decode()
+        files = os.listdir(user_input)
+        files = str(files)
+        
+        client_socket.send(files.encode())
+        print("Command custom_dir sent correctly!")
+
     else:
         print("Leave")

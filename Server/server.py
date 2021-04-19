@@ -24,10 +24,24 @@ while 1:
 
     if command == "view_cwd":
         conn.send(command.encode())
-        print("Command has been executed successfully!")
+        print("Command view_cwd has been executed successfully!")
 
         files = conn.recv(10000)
         files = files.decode()
         print("We are inside the directory named : ", files, " of the client named ", client_address)
+    
+    elif command == "custom_dir":
+        conn.send(command.encode())
+        print("Command custom_dir has been executed successfully!")
+
+        directory = input(str("Input the directory whose files you want to see: "))
+        conn.send(directory.encode())
+        print("Directory name sent!")
+
+        files = conn.recv(10000)
+        files = files.decode()
+        print("The files inside the directory ", directory, " are given as follows: ")
+        print(files)
+
     else:
         print("Command NOT recognized!")
