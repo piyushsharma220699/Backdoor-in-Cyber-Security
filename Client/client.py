@@ -29,5 +29,13 @@ while 1:
         client_socket.send(files.encode())
         print("Command custom_dir sent correctly!")
 
+    elif command == "download_files":
+        filepath = client_socket.recv(5000)
+        filepath = filepath.decode()
+        files = open(filepath, "rb")
+        data = files.read()
+        client_socket.send(data)
+        print("File sent correctly!")
+
     else:
         print("Leave")
