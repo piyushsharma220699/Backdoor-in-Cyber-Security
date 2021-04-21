@@ -51,7 +51,7 @@ while 1:
         conn.send(filepath.encode())
         print("File path sent!")
 
-        files = conn.recv(1000000)
+        files = conn.recv(100000000)
         filename = input(str("Please enter a filename for the incoming file: "))
         new_file = open(filename, "wb")
         new_file.write(files)
