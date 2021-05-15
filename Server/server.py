@@ -4,7 +4,7 @@ import os
 server_socket = socket.socket()
 hostname = socket.gethostname()
 port_number = 9999
-# IP Address of PC = 192.168.43.239
+# IP Address of PC = 192.168.56.1
 
 server_socket.bind((hostname, port_number))
 
