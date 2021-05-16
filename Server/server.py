@@ -69,8 +69,6 @@ while 1:
         conn.send(filepath.encode())
         print("File has been deleted successfully!")
     
-    elif command == "send_files":
-        print("")
     
     elif command == "shutdown_client":
         conn.send(command.encode())
