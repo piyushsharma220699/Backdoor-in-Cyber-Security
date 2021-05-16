@@ -8,7 +8,7 @@ There are two files: client.py and server.py
 The attacker will run the server.py file on his system.
 Then, the attacker will send the client.exe file to the client. Then once the client runs the file on his system, he will see the normal snake game implementation in front of it. However, in the backend, the client's system will connect itself to the attacker's system and the attacker will be able to access the client's system (only till the client plays the game).
 
-_Don't forget to change the IP Address in the client.py and server.py! You can find your IP Address by executing the following command in your command prompt _
+_Don't forget to change the IP Address in the client.py and server.py! You can find your IP Address by executing the following command in your command prompt_
 
 
 The following commands can be performed on the client system once the attacker connects to it:
