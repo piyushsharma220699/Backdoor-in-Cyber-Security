@@ -1,7 +1,7 @@
 # BACKDOOR IMPLEMENTATION IN PYTHON 3.X
 
 ## Introduction
-Backdoor is a type of malware which is used to gain unauthorised access of a system. Basically it is difficult for the hackers to find the unsecured points of entry in a system again and again, so what they do is they try to get into a system once, where they create a backdoor (which they can use for gaining access of that system again). Also, sometimes hackers create malicious files which when executed on the client's system hacks it and provides the attacker access of the system.
+Backdoor is a type of malware which is used to gain unauthorised access of a system first. Basically it is difficult for the hackers to find the unsecured points of entry in a system again and again, so what they do is they try to get into a system once, where they create a backdoor (which they can use for gaining access of that system again). Also, sometimes hackers create malicious files which when executed on the client's system hacks it and provides the attacker access of the system.
 
 ## About the Code
 There are two files: client.py and server.py
