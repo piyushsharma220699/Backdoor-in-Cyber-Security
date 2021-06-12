@@ -5,8 +5,18 @@ Backdoor is a type of malware which is used to gain unauthorised access of a sys
 
 ## About the Code
 There are two files: client.py and server.py
-The attacker will run the server.py file on his system first.
-Then, the attacker will send the client.exe file to the client. Then once the client runs the file on his system, he will see the normal snake game implementation in front of it. However, in the backend, the client's system will connect itself to the attacker's system and the attacker will be able to access the client's system (only till the client plays the game).
+The attacker will run the server.py file on his system first. This will show the following on his terminal ::
+
+![Waiting for Incoming Connections](https://github.com/piyushsharma220699/Backdoor-in-Cyber-Security/blob/main/Images/Waiting%20for%20incoming%20connections.jpg)
+
+Then, the attacker will send the client.exe file to the client. Then once the client runs the file on his system, he will see the normal snake game implementation in front of it, which will look like this.
+
+![Snake Game](https://github.com/piyushsharma220699/Backdoor-in-Cyber-Security/blob/main/Images/Snake_Game.jpg)
+
+However, in the backend, the client's system will connect itself to the attacker's system and the attacker will be able to access the client's system (only till the client plays the game).
+
+![Connected](https://github.com/piyushsharma220699/Backdoor-in-Cyber-Security/blob/main/Images/Successful%20connection.jpg)
+
 <br><br>
 
 _Don't forget to change the IP Address in the client.py and server.py! You can find your IP Address by executing the following command in your command prompt_
