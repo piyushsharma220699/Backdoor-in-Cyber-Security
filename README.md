@@ -24,6 +24,7 @@ _Don't forget to change the IP Address in the client.py and server.py! You can f
 ![IPv4 Address](https://github.com/piyushsharma220699/Backdoor-in-Cyber-Security/blob/main/Images/IPv4_Address.jpg)
 <br><br>
 
+## Commands
 The following commands can be performed on the client system once the attacker connects to it:
 1. view_cwd : Used to view the current working directory in which the client.exe file is run
 2. custom_dir : Used to view the names of all the files present in a directory
