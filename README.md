@@ -17,13 +17,7 @@ However, in the backend, the client's system will connect itself to the attacker
 
 ![Connected](https://github.com/piyushsharma220699/Backdoor-in-Cyber-Security/blob/main/Images/Successful%20connection.jpg)
 
-<br><br>
-
-_Don't forget to change the IP Address in the client.py and server.py! You can find your IP Address by executing the following command in your command prompt_
-
-![IPv4 Address](https://github.com/piyushsharma220699/Backdoor-in-Cyber-Security/blob/main/Images/IPv4_Address.jpg)
-<br><br>
-
+<br>
 ## Commands
 The following commands can be performed on the client system once the attacker connects to it:
 1. view_cwd : Used to view the current working directory in which the client.exe file is run
@@ -32,3 +26,9 @@ The following commands can be performed on the client system once the attacker c
 4. remove_files : Used to remove a file from the client's system
 5. shutdown_client : Used to shutdown the client's system
 6. restart_system : Used to restart the client's system
+
+
+_Don't forget to change the IP Address in the client.py and server.py! You can find your IP Address by executing the following command in your command prompt_
+
+![IPv4 Address](https://github.com/piyushsharma220699/Backdoor-in-Cyber-Security/blob/main/Images/IPv4_Address.jpg)
+<br><br>
